@@ -97,11 +97,71 @@ else
 
 //Console.WriteLine(conta2.titular.nome);
 
-ContaCorrente conta3 = new ContaCorrente();
-conta3.SetSaldo (200);
-Console.WriteLine(conta3.GetSaldo());
+//ContaCorrente conta3 = new ContaCorrente();
+//conta3.Numero_agencia = 18;
+//conta3.Conta = "1011-H";
+//conta3.SetSaldo (200);
+//Console.WriteLine(conta3.GetSaldo());
+//Console.WriteLine(conta3.Numero_agencia);
+//Console.WriteLine(conta3.Conta);
 
+//ContaCorrente conta4 = new ContaCorrente(18, "1010-x");
+//conta4.SetSaldo(500);
+//conta4.Titular = new Cliente();
+//Console.WriteLine(conta4.GetSaldo());
+//Console.WriteLine(conta4.Numero_agencia);
 
+//ContaCorrente conta5 = new ContaCorrente(283, "1234-x");
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+//ContaCorrente conta6 = new ContaCorrente(284, "9874-z");
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+//ContaCorrente conta7 = new ContaCorrente(285, "9875-x");
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+//Console.WriteLine();
+
+//Cliente cliente1 = new Cliente("Rude", "32145678901");
+//Console.WriteLine(Cliente.TotalDeClientesCriados);
+
+//Cliente cliente2 = new Cliente("Rude", "22145678901");
+//Console.WriteLine(Cliente.TotalDeClientesCriados);
+
+//Cliente cliente3 = new Cliente("Rude", "12145678901");
+//Console.WriteLine(Cliente.TotalDeClientesCriados);
+
+//Cliente sarah = new Cliente();
+//sarah.Nome = "Sarah Silva";
+//sarah.Profissao = "Professora";
+//sarah.Cpf = "11111111-12";
+
+//Cliente ester = new Cliente();
+//ester.Nome = "Ester Almeida";
+//ester.Profissao = "Advogada";
+//ester.Cpf = "868524125-32";
+
+//Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
+
+//ContaCorrente contaAndre = new(159, "152869-x");
+//contaAndre.Titular = new Cliente();
+//contaAndre.Titular.Nome = " André Pereira";
+//contaAndre.Titular.Profissao = "Auxiliar Administrativo";
+//contaAndre.Saldo = 100;
+
+//Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados );
+
+ContaCorrente contaCorrente1 = new("Joaquim", "78945613201", "Program", 18, "4545-x");
+ContaCorrente contacorrente2 = new("Maria", "78945612301", "Artista", 18, "4646-z");
+Console.WriteLine("Nome: " + contaCorrente1.Titular.Nome + "\r\n" + "CPF: " + contaCorrente1.Titular.Cpf + "\r\n" +
+    contaCorrente1.Conta + "-" + contaCorrente1.Numero_agencia);
+
+Console.WriteLine();
+
+Console.WriteLine("Nome: " + contacorrente2.Titular.Nome + "\r\n" + "CPF: " + contacorrente2.Titular.Cpf + "\r\n" +
+    contacorrente2.Conta + "-" + contacorrente2.Numero_agencia);
+Console.WriteLine();
+Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
 
 Console.WriteLine();
 Console.WriteLine("Pressione entre para sair");
